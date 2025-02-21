@@ -93,13 +93,14 @@ export default function Statistics() {
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                                className="flex items-center justify-between text-indigo-100 text-sm"
+                                className="flex items-center justify-between text-indigo-100 text-sm flex-wrap md:flex-nowrap"
                             >
-                                <span className="w-24 truncate">{winner.address}</span>
+                                {/* 桌面端显示全部，移动端只显示部分 */}
+                                <span className="hidden md:block w-24 truncate">{winner.address}</span>
                                 <span className="w-24 text-center">{winner.type}</span>
                                 <span className="w-24 text-right">{winner.amount}</span>
-                                <span className="w-20 text-right">{winner.gas}</span>
-                                <span className="w-28 text-right text-green-400">{winner.PnL}</span>
+                                <span className="hidden md:block w-20 text-right">{winner.gas}</span>
+                                <span className="w-28 text-right text-green-400 text-xs md:text-sm">{winner.PnL}</span>
                                 <span className="w-20 text-right">{winner.time}</span>
                             </motion.div>
                         ))}
