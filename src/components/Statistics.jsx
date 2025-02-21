@@ -25,7 +25,18 @@ export default function Statistics() {
         }
     ];
 
-    // 模拟最近的中奖记录数据
+    const TableHeader = () => (
+        <div className="flex items-center justify-between text-indigo-200 text-sm border-b border-indigo-100/20 pb-2 mb-3">
+            <span className="hidden md:block w-24 truncate">地址</span>
+            <span className="w-24 text-center">项目</span>
+            <span className="w-24 text-right">奖金</span>
+            <span className="hidden md:block w-20 text-right">GAS</span>
+            <span className="w-28 text-right">收益率</span>
+            <span className="w-20 text-right">时间</span>
+        </div>
+    );
+
+    // 修改数据结构，移除第一行作为标题的做法
     const recentWinners = [
         {
             address: '0x7a...3f9',
@@ -87,6 +98,7 @@ export default function Statistics() {
                 <div className="mt-12 bg-white/10 backdrop-blur-lg rounded-lg p-6">
                     <h3 className="text-xl font-semibold text-white mb-4">最新中奖记录</h3>
                     <div className="space-y-4">
+                        <TableHeader />
                         {recentWinners.map((winner, index) => (
                             <motion.div
                                 key={index}
@@ -95,7 +107,6 @@ export default function Statistics() {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="flex items-center justify-between text-indigo-100 text-sm flex-wrap md:flex-nowrap"
                             >
-                                {/* 桌面端显示全部，移动端只显示部分 */}
                                 <span className="hidden md:block w-24 truncate">{winner.address}</span>
                                 <span className="w-24 text-center">{winner.type}</span>
                                 <span className="w-24 text-right">{winner.amount}</span>
