@@ -11,8 +11,8 @@ export default function Footer() {
                         </h3>
                         <ul className="mt-4 space-y-4">
                             <li>
-                                <Link to="/product" className="text-base text-gray-500 hover:text-gray-900">
-                                    功能介绍
+                                <Link to="/roadmap" className="text-base text-gray-500 hover:text-gray-900">
+                                    路线规划
                                 </Link>
                             </li>
                             <li>
@@ -29,13 +29,13 @@ export default function Footer() {
                         </h3>
                         <ul className="mt-4 space-y-4">
                             <li>
-                                <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                                <a href="/product" className="text-base text-gray-500 hover:text-gray-900">
                                     帮助中心
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-base text-gray-500 hover:text-gray-900">
-                                    常见问题
+                                <a href="/Product" className="text-base text-gray-500 hover:text-gray-900">
+                                    功能介绍
                                 </a>
                             </li>
                         </ul>
@@ -52,7 +52,7 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="text-base text-gray-500 hover:text-gray-900">
+                                <a href="https://x.com/longlonglongbtc" className="text-base text-gray-500 hover:text-gray-900">
                                     X/Twitter
                                 </a>
                             </li>

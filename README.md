@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Monad Lottery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+基于 Monad 区块链的去中心化彩票系统。
 
-## Available Scripts
+## 项目简介
 
-In the project directory, you can run:
+Monad Lottery 是一个完全去中心化的彩票系统，旨在通过区块链技术解决传统彩票行业的信任和透明度问题。项目基于 Monad 区块链开发，利用智能合约确保每次抽奖的公平性和透明度。
 
-### `npm start`
+## 主要特点
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 完全去中心化运营
+- 智能合约保障公平性
+- 开源代码，透明可信
+- 自动化开奖机制
+- 全球化参与，无地域限制
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 技术栈
 
-### `npm test`
+- 前端：React.js
+- 区块链：Monad
+- 智能合约：Solidity
+- 样式：Tailwind CSS
+- 动画：Framer Motion
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 本地开发
 
-### `npm run build`
+```bash
+# 安装依赖
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 启动开发服务器
+npm run dev
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 构建生产版本
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 项目结构
 
-### `npm run eject`
+```
+src/
+  ├── components/     # 可复用组件
+  ├── pages/         # 页面组件
+  ├── styles/        # 样式文件
+  └── utils/         # 工具函数
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 团队成员
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- 不管不理的员 - 创始人
+- MingLau - 顾问
+- 法恒 - 联合创始人
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 许可证
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License

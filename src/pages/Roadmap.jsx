@@ -7,8 +7,8 @@ export default function Roadmap() {
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="text-center">
-                <h1 className="text-3xl font-bold">路线图</h1>
-                <p className="mt-4 text-xl text-gray-500">我们的发展计划</p>
+                <h1 className="text-3xl font-bold">Monad Lottery 项目路线图</h1>
+                <p className="mt-4 text-xl text-gray-500">我们的发展计划。部分内容可能会有所调整，依赖于 Monad 公链的进度。</p>
             </div>
 
             <div className="mt-16">
